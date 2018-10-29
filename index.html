@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+	<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
+	<script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
+  <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene altspace>
+      <a-assets>
+        <img id="fog-img" src="fog.gif"></img>
+      </a-assets>
+      <a-plane material="shader: gif; src: #fog-img; opacity:0.7" scale="1000 1000" rotation="270 0" position="0 -200 0"></a-plane>
+    </a-scene>
+  </body>
+</html>
